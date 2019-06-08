@@ -12,6 +12,8 @@
 		F4E1E54D22AB4E9700794980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E54B22AB4E9700794980 /* Main.storyboard */; };
 		F4E1E54F22AB4E9800794980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E54E22AB4E9800794980 /* Assets.xcassets */; };
 		F4E1E55222AB4E9800794980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E55022AB4E9800794980 /* LaunchScreen.storyboard */; };
+		F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */; };
+		F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E56222AB6C6300794980 /* SignInVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F4E1E54E22AB4E9800794980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E1E55122AB4E9800794980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4E1E55322AB4E9800794980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpVC.swift; sourceTree = "<group>"; };
+		F4E1E56222AB6C6300794980 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		F4E1E54622AB4E9700794980 /* FlowClu */ = {
 			isa = PBXGroup;
 			children = (
+				F4E1E55B22AB6BA100794980 /* Models */,
+				F4E1E55C22AB6BB000794980 /* Views */,
+				F4E1E55D22AB6BB600794980 /* Controllers */,
 				F4E1E54722AB4E9700794980 /* AppDelegate.swift */,
-				F4E1E54922AB4E9700794980 /* ViewController.swift */,
 				F4E1E54B22AB4E9700794980 /* Main.storyboard */,
 				F4E1E54E22AB4E9800794980 /* Assets.xcassets */,
 				F4E1E55022AB4E9800794980 /* LaunchScreen.storyboard */,
 				F4E1E55322AB4E9800794980 /* Info.plist */,
 			);
 			path = FlowClu;
+			sourceTree = "<group>";
+		};
+		F4E1E55B22AB6BA100794980 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4E1E55C22AB6BB000794980 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4E1E55D22AB6BB600794980 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4E1E54922AB4E9700794980 /* ViewController.swift */,
+				F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */,
+				F4E1E56222AB6C6300794980 /* SignInVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +167,8 @@
 			files = (
 				F4E1E54A22AB4E9700794980 /* ViewController.swift in Sources */,
 				F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */,
+				F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */,
+				F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
