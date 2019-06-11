@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502FC9771AFC1D01DB50C4BB /* Pods_FlowClu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */; };
+		F4354DCE22AF25130054BFF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4354DCD22AF25120054BFF2 /* GoogleService-Info.plist */; };
+		F4354DD022AF28B40054BFF2 /* FirebaseRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4354DCF22AF28B40054BFF2 /* FirebaseRegister.swift */; };
+		F4354DD222AF28EB0054BFF2 /* FirebaseLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4354DD122AF28EB0054BFF2 /* FirebaseLogin.swift */; };
+		F4354DD422AF293A0054BFF2 /* FirebaseSignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4354DD322AF293A0054BFF2 /* FirebaseSignOut.swift */; };
+		F4354DDB22AF75490054BFF2 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */; };
 		F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54722AB4E9700794980 /* AppDelegate.swift */; };
 		F4E1E54A22AB4E9700794980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54922AB4E9700794980 /* ViewController.swift */; };
 		F4E1E54D22AB4E9700794980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E54B22AB4E9700794980 /* Main.storyboard */; };
@@ -17,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowClu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.debug.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.debug.xcconfig"; sourceTree = "<group>"; };
+		F4354DCD22AF25120054BFF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4354DCF22AF28B40054BFF2 /* FirebaseRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRegister.swift; sourceTree = "<group>"; };
+		F4354DD122AF28EB0054BFF2 /* FirebaseLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogin.swift; sourceTree = "<group>"; };
+		F4354DD322AF293A0054BFF2 /* FirebaseSignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSignOut.swift; sourceTree = "<group>"; };
+		F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.release.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.release.xcconfig"; sourceTree = "<group>"; };
 		F4E1E54422AB4E9700794980 /* FlowClu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowClu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E1E54722AB4E9700794980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E1E54922AB4E9700794980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +47,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502FC9771AFC1D01DB50C4BB /* Pods_FlowClu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		179EA58A6F431E0871E3BFF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */,
+				F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A87473B14978F5E60C4439BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4354DD922AF75090054BFF2 /* Boards */ = {
+			isa = PBXGroup;
+			children = (
+				F4E1E55022AB4E9800794980 /* LaunchScreen.storyboard */,
+				F4E1E54B22AB4E9700794980 /* Main.storyboard */,
+				F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */,
+			);
+			path = Boards;
+			sourceTree = "<group>";
+		};
 		F4E1E53B22AB4E9700794980 = {
 			isa = PBXGroup;
 			children = (
 				F4E1E54622AB4E9700794980 /* FlowClu */,
 				F4E1E54522AB4E9700794980 /* Products */,
+				179EA58A6F431E0871E3BFF1 /* Pods */,
+				A87473B14978F5E60C4439BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +102,14 @@
 		F4E1E54622AB4E9700794980 /* FlowClu */ = {
 			isa = PBXGroup;
 			children = (
+				F4354DD922AF75090054BFF2 /* Boards */,
 				F4E1E55B22AB6BA100794980 /* Models */,
 				F4E1E55C22AB6BB000794980 /* Views */,
 				F4E1E55D22AB6BB600794980 /* Controllers */,
 				F4E1E54722AB4E9700794980 /* AppDelegate.swift */,
-				F4E1E54B22AB4E9700794980 /* Main.storyboard */,
 				F4E1E54E22AB4E9800794980 /* Assets.xcassets */,
-				F4E1E55022AB4E9800794980 /* LaunchScreen.storyboard */,
 				F4E1E55322AB4E9800794980 /* Info.plist */,
+				F4354DCD22AF25120054BFF2 /* GoogleService-Info.plist */,
 			);
 			path = FlowClu;
 			sourceTree = "<group>";
@@ -73,6 +117,9 @@
 		F4E1E55B22AB6BA100794980 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F4354DCF22AF28B40054BFF2 /* FirebaseRegister.swift */,
+				F4354DD122AF28EB0054BFF2 /* FirebaseLogin.swift */,
+				F4354DD322AF293A0054BFF2 /* FirebaseSignOut.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4E1E55622AB4E9800794980 /* Build configuration list for PBXNativeTarget "FlowClu" */;
 			buildPhases = (
+				D0F26FBAE85CBD99C9AEAB15 /* [CP] Check Pods Manifest.lock */,
 				F4E1E54022AB4E9700794980 /* Sources */,
 				F4E1E54122AB4E9700794980 /* Frameworks */,
 				F4E1E54222AB4E9700794980 /* Resources */,
+				31150C54F984F5861BB76EBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,22 +201,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4354DCE22AF25130054BFF2 /* GoogleService-Info.plist in Resources */,
 				F4E1E55222AB4E9800794980 /* LaunchScreen.storyboard in Resources */,
 				F4E1E54F22AB4E9800794980 /* Assets.xcassets in Resources */,
 				F4E1E54D22AB4E9700794980 /* Main.storyboard in Resources */,
+				F4354DDB22AF75490054BFF2 /* HomeStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31150C54F984F5861BB76EBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlowClu/Pods-FlowClu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlowClu/Pods-FlowClu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlowClu/Pods-FlowClu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F26FBAE85CBD99C9AEAB15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowClu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4E1E54022AB4E9700794980 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4354DD222AF28EB0054BFF2 /* FirebaseLogin.swift in Sources */,
 				F4E1E54A22AB4E9700794980 /* ViewController.swift in Sources */,
+				F4354DD022AF28B40054BFF2 /* FirebaseRegister.swift in Sources */,
 				F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */,
 				F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */,
+				F4354DD422AF293A0054BFF2 /* FirebaseSignOut.swift in Sources */,
 				F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +408,7 @@
 		};
 		F4E1E55722AB4E9800794980 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -329,6 +426,7 @@
 		};
 		F4E1E55822AB4E9800794980 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

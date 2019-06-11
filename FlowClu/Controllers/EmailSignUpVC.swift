@@ -7,9 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 class EmailSignUpVC: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var passwordsUnmatchLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +36,21 @@ class EmailSignUpVC: UIViewController {
     }
     */
 
+
+    @IBAction func signUpButtonWasPressed(_ sender: UIButton) {
+        guard let name = nameTextField.text, !name.isEmpty,
+            let email = emailTextField.text, !email.isEmpty,
+            let password = passwordTextField.text, !password.isEmpty else { return }
+        
+        activityIndicator.startAnimating()
+        
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let error = error {
+                debugPrint(error)
+                return
+            }
+            print("Successfully registered new user")
+        }
+        activityIndicator.stopAnimating()
+    }
 }

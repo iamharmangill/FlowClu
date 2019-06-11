@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +31,22 @@ class SignInVC: UIViewController {
     }
     */
 
+    @IBAction func signInButtonWasPressed(_ sender: UIButton) {
+        
+        guard let email = emailTextField.text, !email.isEmpty,
+              let password = passwordTextField.text, !password.isEmpty
+        else {
+            return
+        }
+        
+        Auth.auth().signIn(withEmail: email, password: password) {user, error in
+//            guard let strongSelf = self else { return }
+            if let error = error {
+                debugPrint(error)
+                return
+            }
+            print("User Successfully logged in")
+            
+        }
+    }
 }
