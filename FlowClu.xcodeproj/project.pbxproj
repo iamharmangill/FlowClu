@@ -14,12 +14,13 @@
 		F4354DD422AF293A0054BFF2 /* FirebaseSignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4354DD322AF293A0054BFF2 /* FirebaseSignOut.swift */; };
 		F4354DDB22AF75490054BFF2 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */; };
 		F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54722AB4E9700794980 /* AppDelegate.swift */; };
-		F4E1E54A22AB4E9700794980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54922AB4E9700794980 /* ViewController.swift */; };
+		F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54922AB4E9700794980 /* MainStoryboardVC.swift */; };
 		F4E1E54D22AB4E9700794980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E54B22AB4E9700794980 /* Main.storyboard */; };
 		F4E1E54F22AB4E9800794980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E54E22AB4E9800794980 /* Assets.xcassets */; };
 		F4E1E55222AB4E9800794980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E55022AB4E9800794980 /* LaunchScreen.storyboard */; };
 		F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */; };
 		F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E56222AB6C6300794980 /* SignInVC.swift */; };
+		F4E7B91D22B21C2400C64BFE /* HomeStoryboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E7B91C22B21C2400C64BFE /* HomeStoryboardVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +34,14 @@
 		F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.release.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.release.xcconfig"; sourceTree = "<group>"; };
 		F4E1E54422AB4E9700794980 /* FlowClu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowClu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E1E54722AB4E9700794980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4E1E54922AB4E9700794980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4E1E54922AB4E9700794980 /* MainStoryboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryboardVC.swift; sourceTree = "<group>"; };
 		F4E1E54C22AB4E9700794980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4E1E54E22AB4E9800794980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E1E55122AB4E9800794980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4E1E55322AB4E9800794980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpVC.swift; sourceTree = "<group>"; };
 		F4E1E56222AB6C6300794980 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		F4E7B91C22B21C2400C64BFE /* HomeStoryboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoryboardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +136,10 @@
 		F4E1E55D22AB6BB600794980 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F4E1E54922AB4E9700794980 /* ViewController.swift */,
+				F4E1E54922AB4E9700794980 /* MainStoryboardVC.swift */,
 				F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */,
 				F4E1E56222AB6C6300794980 /* SignInVC.swift */,
+				F4E7B91C22B21C2400C64BFE /* HomeStoryboardVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -259,9 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4354DD222AF28EB0054BFF2 /* FirebaseLogin.swift in Sources */,
-				F4E1E54A22AB4E9700794980 /* ViewController.swift in Sources */,
+				F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */,
 				F4354DD022AF28B40054BFF2 /* FirebaseRegister.swift in Sources */,
 				F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */,
+				F4E7B91D22B21C2400C64BFE /* HomeStoryboardVC.swift in Sources */,
 				F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */,
 				F4354DD422AF293A0054BFF2 /* FirebaseSignOut.swift in Sources */,
 				F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */,

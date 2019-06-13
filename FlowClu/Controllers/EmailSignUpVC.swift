@@ -50,7 +50,7 @@ class EmailSignUpVC: UIViewController {
                 return
             }
             print("Successfully registered new user")
+            self.activityIndicator.stopAnimating()
         }
-        activityIndicator.stopAnimating()
     }
 }
