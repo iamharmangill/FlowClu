@@ -21,21 +21,14 @@ class SignInVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+ 
     @IBAction func signInButtonWasPressed(_ sender: UIButton) {
         
         guard let email = emailTextField.text, !email.isEmpty,
-              let password = passwordTextField.text, !password.isEmpty else { return }
+              let password = passwordTextField.text, !password.isEmpty else {
+                simpleAlert(title: "Error", msg: "Please fill out all fields.")
+                return
+        }
         
         activityIndicator.startAnimating()
         
@@ -48,8 +41,21 @@ class SignInVC: UIViewController {
             }
             print("User Successfully logged in")
             self.activityIndicator.stopAnimating()
+           
+        }
+        
+        let currentUser = Auth.auth().currentUser
+        
+        if ( currentUser == nil) {
+            return
+        } else {
+            
+//            self.performSegue(withIdentifier: "signInToTabBar", sender: self)
+            
             
         }
+        
+        
     }
     
 }

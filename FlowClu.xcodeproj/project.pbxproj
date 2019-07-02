@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		502FC9771AFC1D01DB50C4BB /* Pods_FlowClu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */; };
+		F429256122B88AE7006EEA3B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429256022B88AE7006EEA3B /* Extensions.swift */; };
 		F4354DCE22AF25130054BFF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4354DCD22AF25120054BFF2 /* GoogleService-Info.plist */; };
 		F4354DD022AF28B40054BFF2 /* FirebaseRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4354DCF22AF28B40054BFF2 /* FirebaseRegister.swift */; };
 		F4354DD222AF28EB0054BFF2 /* FirebaseLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4354DD122AF28EB0054BFF2 /* FirebaseLogin.swift */; };
 		F4354DD422AF293A0054BFF2 /* FirebaseSignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4354DD322AF293A0054BFF2 /* FirebaseSignOut.swift */; };
 		F4354DDB22AF75490054BFF2 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */; };
+		F446397922B4C196004CA54C /* GetEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446397822B4C196004CA54C /* GetEmailVC.swift */; };
 		F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54722AB4E9700794980 /* AppDelegate.swift */; };
 		F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54922AB4E9700794980 /* MainStoryboardVC.swift */; };
 		F4E1E54D22AB4E9700794980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E54B22AB4E9700794980 /* Main.storyboard */; };
@@ -26,11 +28,13 @@
 /* Begin PBXFileReference section */
 		50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowClu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.debug.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.debug.xcconfig"; sourceTree = "<group>"; };
+		F429256022B88AE7006EEA3B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F4354DCD22AF25120054BFF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4354DCF22AF28B40054BFF2 /* FirebaseRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRegister.swift; sourceTree = "<group>"; };
 		F4354DD122AF28EB0054BFF2 /* FirebaseLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogin.swift; sourceTree = "<group>"; };
 		F4354DD322AF293A0054BFF2 /* FirebaseSignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSignOut.swift; sourceTree = "<group>"; };
 		F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		F446397822B4C196004CA54C /* GetEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEmailVC.swift; sourceTree = "<group>"; };
 		F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.release.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.release.xcconfig"; sourceTree = "<group>"; };
 		F4E1E54422AB4E9700794980 /* FlowClu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowClu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E1E54722AB4E9700794980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F429255B22B8885E006EEA3B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F429256022B88AE7006EEA3B /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		F4354DD922AF75090054BFF2 /* Boards */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 		F4E1E54622AB4E9700794980 /* FlowClu */ = {
 			isa = PBXGroup;
 			children = (
+				F429255B22B8885E006EEA3B /* Utils */,
 				F4354DD922AF75090054BFF2 /* Boards */,
 				F4E1E55B22AB6BA100794980 /* Models */,
 				F4E1E55C22AB6BB000794980 /* Views */,
@@ -140,6 +153,7 @@
 				F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */,
 				F4E1E56222AB6C6300794980 /* SignInVC.swift */,
 				F4E7B91C22B21C2400C64BFE /* HomeStoryboardVC.swift */,
+				F446397822B4C196004CA54C /* GetEmailVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -266,7 +280,9 @@
 				F4354DD022AF28B40054BFF2 /* FirebaseRegister.swift in Sources */,
 				F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */,
 				F4E7B91D22B21C2400C64BFE /* HomeStoryboardVC.swift in Sources */,
+				F429256122B88AE7006EEA3B /* Extensions.swift in Sources */,
 				F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */,
+				F446397922B4C196004CA54C /* GetEmailVC.swift in Sources */,
 				F4354DD422AF293A0054BFF2 /* FirebaseSignOut.swift in Sources */,
 				F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */,
 			);

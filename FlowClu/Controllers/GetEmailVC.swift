@@ -1,18 +1,22 @@
 //
-//  HomeStoryboardVC.swift
+//  GetEmailVC.swift
 //  FlowClu
 //
-//  Created by Harman Gill on 2019-06-12.
+//  Created by Harman Gill on 2019-06-14.
 //  Copyright © 2019 Harman Gill. All rights reserved.
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
-class HomeStoryboardVC: UIViewController {
+class GetEmailVC: UIViewController {
+    
+    var ref = Database.database().reference().root
 
+    @IBOutlet weak var labelview: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         // Do any additional setup after loading the view.
     }
@@ -27,5 +31,8 @@ class HomeStoryboardVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func getEmailBtnTapped(_ sender: Any) {
+        let uid = Auth.auth().currentUser?.uid
+            
+    }
 }

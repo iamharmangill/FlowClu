@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
+import FirebaseAuth
 
 class EmailSignUpVC: UIViewController {
 
@@ -38,9 +40,21 @@ class EmailSignUpVC: UIViewController {
 
 
     @IBAction func signUpButtonWasPressed(_ sender: UIButton) {
+        
+        let alertController = UIAlertController(title: "Hello  Coders", message: "Visit www.simplifiedios.net to learn xcode", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "Close Alert", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        
+        
+        
         guard let name = nameTextField.text, !name.isEmpty,
             let email = emailTextField.text, !email.isEmpty,
-            let password = passwordTextField.text, !password.isEmpty else { return }
+            let password = passwordTextField.text, !password.isEmpty
+            else {
+                present(alertController, animated: true, completion: nil)
+                return
+        }
+        
         
         activityIndicator.startAnimating()
         
@@ -51,6 +65,10 @@ class EmailSignUpVC: UIViewController {
             }
             print("Successfully registered new user")
             self.activityIndicator.stopAnimating()
+            let uid = Auth.auth().currentUser?.uid
         }
+        
+        
+        
     }
 }

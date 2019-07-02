@@ -42,27 +42,30 @@ class SHCircleBarController: UITabBarController {
         let tabBar = SHCircleBar()
         self.setValue(tabBar, forKey: "tabBar")
         
+        
         self.circleView = UIView(frame: .zero)
         circleView.layer.cornerRadius = 30
         circleView.backgroundColor = .white
         circleView.isUserInteractionEnabled = false
-        
+
         self.circleImageView = UIImageView(frame: .zero)
         circleImageView.layer.cornerRadius = 30
         circleImageView.isUserInteractionEnabled = false
         circleImageView.contentMode = .center
-        
+
         circleView.addSubview(circleImageView)
         self.view.addSubview(circleView)
         let tabWidth = self.view.bounds.width / CGFloat(self.tabBar.items?.count ?? 4)
-        
+
         circleView.frame = CGRect(x: tabWidth / 2 - 30, y: self.tabBar.frame.origin.y - 40, width: 60, height: 60)
         circleImageView.frame = self.circleView.bounds
+
+   
+        
     }
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         circleImageView.image = image(with: self.tabBar.selectedItem?.image ?? self.tabBar.items?.first?.image, scaledTo: CGSize(width: 30, height: 30))
-        
     }
     
     private var _barHeight: CGFloat = 74
