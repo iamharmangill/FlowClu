@@ -7,21 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502FC9771AFC1D01DB50C4BB /* Pods_FlowClu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */; };
+		F4102E5F22CD4A5D00A526CF /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E5E22CD4A5D00A526CF /* AlertVC.swift */; };
+		F4102E6522CD4D4000A526CF /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E6122CD4D4000A526CF /* Oxygen-Regular.ttf */; };
+		F4102E6622CD4D4000A526CF /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E6222CD4D4000A526CF /* Oxygen-Light.ttf */; };
+		F4102E6722CD4D4000A526CF /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4102E6322CD4D4000A526CF /* OFL.txt */; };
+		F4102E6822CD4D4000A526CF /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E6422CD4D4000A526CF /* Oxygen-Bold.ttf */; };
+		F4102E6C22CD542600A526CF /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E6B22CD542600A526CF /* RoundButton.swift */; };
+		F4102E6E22CD580C00A526CF /* HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E6D22CD580C00A526CF /* HEX.swift */; };
+		F4102E7B22CDEAEB00A526CF /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7022CDEAEB00A526CF /* OpenSans-SemiBold.ttf */; };
+		F4102E7C22CDEAEB00A526CF /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7122CDEAEB00A526CF /* OpenSans-Light.ttf */; };
+		F4102E7D22CDEAEB00A526CF /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7222CDEAEB00A526CF /* OpenSans-Italic.ttf */; };
+		F4102E7E22CDEAEB00A526CF /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7322CDEAEB00A526CF /* OpenSans-ExtraBold.ttf */; };
+		F4102E7F22CDEAEB00A526CF /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7422CDEAEB00A526CF /* OpenSans-LightItalic.ttf */; };
+		F4102E8022CDEAEB00A526CF /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7522CDEAEB00A526CF /* OpenSans-Bold.ttf */; };
+		F4102E8122CDEAEB00A526CF /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7622CDEAEB00A526CF /* OpenSans-SemiBoldItalic.ttf */; };
+		F4102E8222CDEAEB00A526CF /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7722CDEAEB00A526CF /* OpenSans-ExtraBoldItalic.ttf */; };
+		F4102E8322CDEAEB00A526CF /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7822CDEAEB00A526CF /* LICENSE.txt */; };
+		F4102E8422CDEAEB00A526CF /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7922CDEAEB00A526CF /* OpenSans-Regular.ttf */; };
+		F4102E8522CDEAEB00A526CF /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E7A22CDEAEB00A526CF /* OpenSans-BoldItalic.ttf */; };
+		F4102E8722CDF05900A526CF /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4102E8622CDF05900A526CF /* Settings.storyboard */; };
+		F4102E8922CDF4B000A526CF /* RoundCornerNoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E8822CDF4B000A526CF /* RoundCornerNoColor.swift */; };
+		F4102E8D22CE036F00A526CF /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E8C22CE036F00A526CF /* PostCell.swift */; };
+		F4102E8F22CE05A700A526CF /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E8E22CE05A700A526CF /* DataSet.swift */; };
+		F4102E9122CE060400A526CF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E9022CE060400A526CF /* Post.swift */; };
+		F4102E9322CE09A800A526CF /* PostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E9222CE09A800A526CF /* PostsVC.swift */; };
+		F4102E9522CEB75F00A526CF /* PostDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E9422CEB75F00A526CF /* PostDetailsVC.swift */; };
+		F429256122B88AE7006EEA3B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429256022B88AE7006EEA3B /* Extensions.swift */; };
+		F4354DCE22AF25130054BFF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4354DCD22AF25120054BFF2 /* GoogleService-Info.plist */; };
+		F4354DDB22AF75490054BFF2 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */; };
+		F446397922B4C196004CA54C /* GetEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446397822B4C196004CA54C /* GetEmailVC.swift */; };
 		F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54722AB4E9700794980 /* AppDelegate.swift */; };
-		F4E1E54A22AB4E9700794980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54922AB4E9700794980 /* ViewController.swift */; };
+		F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54922AB4E9700794980 /* MainStoryboardVC.swift */; };
 		F4E1E54D22AB4E9700794980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E54B22AB4E9700794980 /* Main.storyboard */; };
 		F4E1E54F22AB4E9800794980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E54E22AB4E9800794980 /* Assets.xcassets */; };
 		F4E1E55222AB4E9800794980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E55022AB4E9800794980 /* LaunchScreen.storyboard */; };
+		F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */; };
+		F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E56222AB6C6300794980 /* SignInVC.swift */; };
+		F4E7B91D22B21C2400C64BFE /* HomeStoryboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E7B91C22B21C2400C64BFE /* HomeStoryboardVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowClu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.debug.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.debug.xcconfig"; sourceTree = "<group>"; };
+		F4102E5E22CD4A5D00A526CF /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		F4102E6122CD4D4000A526CF /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
+		F4102E6222CD4D4000A526CF /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
+		F4102E6322CD4D4000A526CF /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		F4102E6422CD4D4000A526CF /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
+		F4102E6B22CD542600A526CF /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F4102E6D22CD580C00A526CF /* HEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HEX.swift; sourceTree = "<group>"; };
+		F4102E7022CDEAEB00A526CF /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		F4102E7122CDEAEB00A526CF /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		F4102E7222CDEAEB00A526CF /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		F4102E7322CDEAEB00A526CF /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F4102E7422CDEAEB00A526CF /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		F4102E7522CDEAEB00A526CF /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F4102E7622CDEAEB00A526CF /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F4102E7722CDEAEB00A526CF /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F4102E7822CDEAEB00A526CF /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		F4102E7922CDEAEB00A526CF /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		F4102E7A22CDEAEB00A526CF /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F4102E8622CDF05900A526CF /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F4102E8822CDF4B000A526CF /* RoundCornerNoColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerNoColor.swift; sourceTree = "<group>"; };
+		F4102E8C22CE036F00A526CF /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		F4102E8E22CE05A700A526CF /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		F4102E9022CE060400A526CF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F4102E9222CE09A800A526CF /* PostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVC.swift; sourceTree = "<group>"; };
+		F4102E9422CEB75F00A526CF /* PostDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsVC.swift; sourceTree = "<group>"; };
+		F429256022B88AE7006EEA3B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F4354DCD22AF25120054BFF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		F446397822B4C196004CA54C /* GetEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEmailVC.swift; sourceTree = "<group>"; };
+		F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.release.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.release.xcconfig"; sourceTree = "<group>"; };
 		F4E1E54422AB4E9700794980 /* FlowClu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowClu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E1E54722AB4E9700794980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4E1E54922AB4E9700794980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4E1E54922AB4E9700794980 /* MainStoryboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryboardVC.swift; sourceTree = "<group>"; };
 		F4E1E54C22AB4E9700794980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4E1E54E22AB4E9800794980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E1E55122AB4E9800794980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4E1E55322AB4E9800794980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpVC.swift; sourceTree = "<group>"; };
+		F4E1E56222AB6C6300794980 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		F4E7B91C22B21C2400C64BFE /* HomeStoryboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoryboardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +97,107 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502FC9771AFC1D01DB50C4BB /* Pods_FlowClu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		179EA58A6F431E0871E3BFF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */,
+				F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A87473B14978F5E60C4439BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4102E5C22CD490300A526CF /* AuthVCs */ = {
+			isa = PBXGroup;
+			children = (
+				F446397822B4C196004CA54C /* GetEmailVC.swift */,
+				F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */,
+				F4E1E56222AB6C6300794980 /* SignInVC.swift */,
+				F4E1E54922AB4E9700794980 /* MainStoryboardVC.swift */,
+			);
+			path = AuthVCs;
+			sourceTree = "<group>";
+		};
+		F4102E5D22CD49EB00A526CF /* HomeVCs */ = {
+			isa = PBXGroup;
+			children = (
+				F4E7B91C22B21C2400C64BFE /* HomeStoryboardVC.swift */,
+				F4102E5E22CD4A5D00A526CF /* AlertVC.swift */,
+				F4102E9222CE09A800A526CF /* PostsVC.swift */,
+				F4102E9422CEB75F00A526CF /* PostDetailsVC.swift */,
+			);
+			path = HomeVCs;
+			sourceTree = "<group>";
+		};
+		F4102E6022CD4D4000A526CF /* Oxygen */ = {
+			isa = PBXGroup;
+			children = (
+				F4102E6122CD4D4000A526CF /* Oxygen-Regular.ttf */,
+				F4102E6222CD4D4000A526CF /* Oxygen-Light.ttf */,
+				F4102E6322CD4D4000A526CF /* OFL.txt */,
+				F4102E6422CD4D4000A526CF /* Oxygen-Bold.ttf */,
+			);
+			path = Oxygen;
+			sourceTree = "<group>";
+		};
+		F4102E6F22CDEAEB00A526CF /* Open_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				F4102E7022CDEAEB00A526CF /* OpenSans-SemiBold.ttf */,
+				F4102E7122CDEAEB00A526CF /* OpenSans-Light.ttf */,
+				F4102E7222CDEAEB00A526CF /* OpenSans-Italic.ttf */,
+				F4102E7322CDEAEB00A526CF /* OpenSans-ExtraBold.ttf */,
+				F4102E7422CDEAEB00A526CF /* OpenSans-LightItalic.ttf */,
+				F4102E7522CDEAEB00A526CF /* OpenSans-Bold.ttf */,
+				F4102E7622CDEAEB00A526CF /* OpenSans-SemiBoldItalic.ttf */,
+				F4102E7722CDEAEB00A526CF /* OpenSans-ExtraBoldItalic.ttf */,
+				F4102E7822CDEAEB00A526CF /* LICENSE.txt */,
+				F4102E7922CDEAEB00A526CF /* OpenSans-Regular.ttf */,
+				F4102E7A22CDEAEB00A526CF /* OpenSans-BoldItalic.ttf */,
+			);
+			path = Open_Sans;
+			sourceTree = "<group>";
+		};
+		F429255B22B8885E006EEA3B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F429256022B88AE7006EEA3B /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F4354DD922AF75090054BFF2 /* Boards */ = {
+			isa = PBXGroup;
+			children = (
+				F4E1E55022AB4E9800794980 /* LaunchScreen.storyboard */,
+				F4E1E54B22AB4E9700794980 /* Main.storyboard */,
+				F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */,
+				F4102E8622CDF05900A526CF /* Settings.storyboard */,
+			);
+			path = Boards;
+			sourceTree = "<group>";
+		};
 		F4E1E53B22AB4E9700794980 = {
 			isa = PBXGroup;
 			children = (
 				F4E1E54622AB4E9700794980 /* FlowClu */,
 				F4E1E54522AB4E9700794980 /* Products */,
+				179EA58A6F431E0871E3BFF1 /* Pods */,
+				A87473B14978F5E60C4439BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +212,48 @@
 		F4E1E54622AB4E9700794980 /* FlowClu */ = {
 			isa = PBXGroup;
 			children = (
+				F4102E6F22CDEAEB00A526CF /* Open_Sans */,
+				F4102E6022CD4D4000A526CF /* Oxygen */,
+				F429255B22B8885E006EEA3B /* Utils */,
+				F4354DD922AF75090054BFF2 /* Boards */,
+				F4E1E55B22AB6BA100794980 /* Models */,
+				F4E1E55C22AB6BB000794980 /* Views */,
+				F4E1E55D22AB6BB600794980 /* Controllers */,
 				F4E1E54722AB4E9700794980 /* AppDelegate.swift */,
-				F4E1E54922AB4E9700794980 /* ViewController.swift */,
-				F4E1E54B22AB4E9700794980 /* Main.storyboard */,
 				F4E1E54E22AB4E9800794980 /* Assets.xcassets */,
-				F4E1E55022AB4E9800794980 /* LaunchScreen.storyboard */,
 				F4E1E55322AB4E9800794980 /* Info.plist */,
+				F4354DCD22AF25120054BFF2 /* GoogleService-Info.plist */,
 			);
 			path = FlowClu;
+			sourceTree = "<group>";
+		};
+		F4E1E55B22AB6BA100794980 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4102E8E22CE05A700A526CF /* DataSet.swift */,
+				F4102E9022CE060400A526CF /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4E1E55C22AB6BB000794980 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4102E6B22CD542600A526CF /* RoundButton.swift */,
+				F4102E6D22CD580C00A526CF /* HEX.swift */,
+				F4102E8822CDF4B000A526CF /* RoundCornerNoColor.swift */,
+				F4102E8C22CE036F00A526CF /* PostCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4E1E55D22AB6BB600794980 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4102E5D22CD49EB00A526CF /* HomeVCs */,
+				F4102E5C22CD490300A526CF /* AuthVCs */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4E1E55622AB4E9800794980 /* Build configuration list for PBXNativeTarget "FlowClu" */;
 			buildPhases = (
+				D0F26FBAE85CBD99C9AEAB15 /* [CP] Check Pods Manifest.lock */,
 				F4E1E54022AB4E9700794980 /* Sources */,
 				F4E1E54122AB4E9700794980 /* Frameworks */,
 				F4E1E54222AB4E9700794980 /* Resources */,
@@ -122,21 +315,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4102E8122CDEAEB00A526CF /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				F4102E8222CDEAEB00A526CF /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				F4102E6822CD4D4000A526CF /* Oxygen-Bold.ttf in Resources */,
+				F4102E6622CD4D4000A526CF /* Oxygen-Light.ttf in Resources */,
+				F4102E7F22CDEAEB00A526CF /* OpenSans-LightItalic.ttf in Resources */,
+				F4102E7B22CDEAEB00A526CF /* OpenSans-SemiBold.ttf in Resources */,
+				F4102E8722CDF05900A526CF /* Settings.storyboard in Resources */,
+				F4354DCE22AF25130054BFF2 /* GoogleService-Info.plist in Resources */,
 				F4E1E55222AB4E9800794980 /* LaunchScreen.storyboard in Resources */,
 				F4E1E54F22AB4E9800794980 /* Assets.xcassets in Resources */,
+				F4102E6522CD4D4000A526CF /* Oxygen-Regular.ttf in Resources */,
+				F4102E8422CDEAEB00A526CF /* OpenSans-Regular.ttf in Resources */,
+				F4102E8022CDEAEB00A526CF /* OpenSans-Bold.ttf in Resources */,
 				F4E1E54D22AB4E9700794980 /* Main.storyboard in Resources */,
+				F4102E8322CDEAEB00A526CF /* LICENSE.txt in Resources */,
+				F4102E8522CDEAEB00A526CF /* OpenSans-BoldItalic.ttf in Resources */,
+				F4102E6722CD4D4000A526CF /* OFL.txt in Resources */,
+				F4102E7D22CDEAEB00A526CF /* OpenSans-Italic.ttf in Resources */,
+				F4102E7C22CDEAEB00A526CF /* OpenSans-Light.ttf in Resources */,
+				F4354DDB22AF75490054BFF2 /* HomeStoryboard.storyboard in Resources */,
+				F4102E7E22CDEAEB00A526CF /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0F26FBAE85CBD99C9AEAB15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowClu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4E1E54022AB4E9700794980 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4E1E54A22AB4E9700794980 /* ViewController.swift in Sources */,
+				F4102E6E22CD580C00A526CF /* HEX.swift in Sources */,
+				F4102E6C22CD542600A526CF /* RoundButton.swift in Sources */,
+				F4102E9322CE09A800A526CF /* PostsVC.swift in Sources */,
+				F4102E9522CEB75F00A526CF /* PostDetailsVC.swift in Sources */,
+				F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */,
+				F4102E9122CE060400A526CF /* Post.swift in Sources */,
 				F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */,
+				F4102E8922CDF4B000A526CF /* RoundCornerNoColor.swift in Sources */,
+				F4E7B91D22B21C2400C64BFE /* HomeStoryboardVC.swift in Sources */,
+				F429256122B88AE7006EEA3B /* Extensions.swift in Sources */,
+				F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */,
+				F4102E5F22CD4A5D00A526CF /* AlertVC.swift in Sources */,
+				F446397922B4C196004CA54C /* GetEmailVC.swift in Sources */,
+				F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */,
+				F4102E8F22CE05A700A526CF /* DataSet.swift in Sources */,
+				F4102E8D22CE036F00A526CF /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +530,7 @@
 		};
 		F4E1E55722AB4E9800794980 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +548,7 @@
 		};
 		F4E1E55822AB4E9800794980 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
