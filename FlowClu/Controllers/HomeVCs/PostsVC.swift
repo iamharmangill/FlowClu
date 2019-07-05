@@ -68,7 +68,11 @@ class PostsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toDetailsVC", sender: self)
+//        performSegue(withIdentifier: "toDetailsVC", sender: self)
+        let detail: PostDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "detail") as! PostDetailsVC
+        detail.postTitle = arrdata[indexPath.row].title
+        detail.postDetail = arrdata[indexPath.row].detail
+        self.navigationController?.pushViewController(detail, animated: true)
     }
 
 }

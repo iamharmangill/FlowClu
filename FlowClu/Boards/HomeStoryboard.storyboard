@@ -325,26 +325,44 @@
         <!--Post DetailsVC-->
         <scene sceneID="Q2e-qk-vCe">
             <objects>
-                <viewController id="nls-D9-Oni" customClass="PostDetailsVC" customModule="FlowClu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detail" id="nls-D9-Oni" customClass="PostDetailsVC" customModule="FlowClu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mON-7k-DjL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8O-h2-p2S">
-                                <rect key="frame" x="186" y="124" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8O-h2-p2S">
+                                <rect key="frame" x="20" y="118" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pbu-qI-ZQZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post Detail" lineBreakMode="wordWrap" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nQ-uV-dLe">
+                                <rect key="frame" x="36" y="186" width="178" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Oxygen-Regular" family="Oxygen" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h8O-h2-p2S" firstAttribute="top" secondItem="fGs-Df-iHn" secondAttribute="top" constant="30" id="1yS-So-fT5"/>
+                            <constraint firstItem="h8O-h2-p2S" firstAttribute="leading" secondItem="mON-7k-DjL" secondAttribute="leadingMargin" id="Oow-Oh-jii"/>
+                            <constraint firstItem="h8O-h2-p2S" firstAttribute="trailing" secondItem="mON-7k-DjL" secondAttribute="trailingMargin" id="oAV-MV-yfD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fGs-Df-iHn"/>
                     </view>
+                    <connections>
+                        <outlet property="postDetailLabel" destination="5nQ-uV-dLe" id="soJ-ue-aAY"/>
+                        <outlet property="postTitleLabel" destination="h8O-h2-p2S" id="RCg-qW-n3R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUy-1b-Cy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1359" y="542"/>
+            <point key="canvasLocation" x="1402.8985507246377" y="541.74107142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DqX-Hg-FLG">

@@ -10,10 +10,17 @@ import UIKit
 
 class PostDetailsVC: UIViewController {
 
+    @IBOutlet weak var postTitleLabel: UILabel!
+    @IBOutlet weak var postDetailLabel: UILabel!
+    
+    var postTitle = ""
+    var postDetail = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        postTitleLabel.text = postTitle
+        postDetailLabel.text = postDetail
     }
     
 
