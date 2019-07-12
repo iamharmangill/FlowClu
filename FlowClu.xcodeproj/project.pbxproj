@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		502FC9771AFC1D01DB50C4BB /* Pods_FlowClu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */; };
+		75F8B06A22CFC6FF0034D78A /* HelpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */; };
+		75F8B06C22CFD06B0034D78A /* TableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */; };
+		75F8B06E22CFD23A0034D78A /* MapLinkDirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06D22CFD23A0034D78A /* MapLinkDirectionViewController.swift */; };
 		F4102E5F22CD4A5D00A526CF /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E5E22CD4A5D00A526CF /* AlertVC.swift */; };
 		F4102E6522CD4D4000A526CF /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E6122CD4D4000A526CF /* Oxygen-Regular.ttf */; };
 		F4102E6622CD4D4000A526CF /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E6222CD4D4000A526CF /* Oxygen-Light.ttf */; };
@@ -49,6 +52,9 @@
 
 /* Begin PBXFileReference section */
 		50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowClu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpListViewController.swift; sourceTree = "<group>"; };
+		75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellTableViewCell.swift; sourceTree = "<group>"; };
+		75F8B06D22CFD23A0034D78A /* MapLinkDirectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLinkDirectionViewController.swift; sourceTree = "<group>"; };
 		D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.debug.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.debug.xcconfig"; sourceTree = "<group>"; };
 		F4102E5E22CD4A5D00A526CF /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		F4102E6122CD4D4000A526CF /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 				F4102E5E22CD4A5D00A526CF /* AlertVC.swift */,
 				F4102E9222CE09A800A526CF /* PostsVC.swift */,
 				F4102E9422CEB75F00A526CF /* PostDetailsVC.swift */,
+				75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */,
+				75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */,
+				75F8B06D22CFD23A0034D78A /* MapLinkDirectionViewController.swift */,
 			);
 			path = HomeVCs;
 			sourceTree = "<group>";
@@ -377,11 +386,14 @@
 				F4102E9522CEB75F00A526CF /* PostDetailsVC.swift in Sources */,
 				F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */,
 				F4102E9122CE060400A526CF /* Post.swift in Sources */,
+				75F8B06E22CFD23A0034D78A /* MapLinkDirectionViewController.swift in Sources */,
 				F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */,
 				F4102E8922CDF4B000A526CF /* RoundCornerNoColor.swift in Sources */,
 				F4E7B91D22B21C2400C64BFE /* HomeStoryboardVC.swift in Sources */,
 				F429256122B88AE7006EEA3B /* Extensions.swift in Sources */,
+				75F8B06C22CFD06B0034D78A /* TableCellTableViewCell.swift in Sources */,
 				F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */,
+				75F8B06A22CFC6FF0034D78A /* HelpListViewController.swift in Sources */,
 				F4102E5F22CD4A5D00A526CF /* AlertVC.swift in Sources */,
 				F446397922B4C196004CA54C /* GetEmailVC.swift in Sources */,
 				F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */,
@@ -533,7 +545,9 @@
 			baseConfigurationReference = D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M6TLM9Q4R;
 				INFOPLIST_FILE = FlowClu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,6 +555,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FlowClu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -551,7 +566,9 @@
 			baseConfigurationReference = F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M6TLM9Q4R;
 				INFOPLIST_FILE = FlowClu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -559,6 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FlowClu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

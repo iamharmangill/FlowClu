@@ -9,7 +9,9 @@
 import UIKit
 
 class PostDetailsVC: UIViewController {
-
+    
+    
+    
     @IBOutlet weak var postTitleLabel: UILabel!
     @IBOutlet weak var postDetailLabel: UILabel!
     

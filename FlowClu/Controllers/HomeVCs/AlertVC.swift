@@ -8,13 +8,55 @@
 
 import UIKit
 
-class AlertVC: UIViewController {
+class AlertVC: UIViewController, UITextFieldDelegate {
 
+    
+    @IBOutlet weak var whatYouNeed: UITextField!
+    
+   
+    @IBOutlet weak var additionalComments: UITextField!
+    
+    
+    
+    
+    @IBAction func checkEntries(_ sender: Any) {
+        
+//        ============= Sending to other view Controller (HelpListViewController) ============
+        
+        let detail:HelpListViewController = self.storyboard?.instantiateViewController(withIdentifier: "helpList") as! HelpListViewController
+    
+        self.navigationController?.pushViewController(detail, animated: true)
+        
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        whatYouNeed.delegate = self
+        additionalComments.delegate = self
+        
+        
+        
     }
+    
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
+    
     
 
     /*
