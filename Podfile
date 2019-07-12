@@ -6,5 +6,5 @@ target 'FlowClu' do
   use_frameworks!
 
   # Pods for FlowClu
-
+  pod 'JTAppleCalendar'
 end
