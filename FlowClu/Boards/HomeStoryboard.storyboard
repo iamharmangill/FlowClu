@@ -274,7 +274,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqf-6s-G0G">
-                                                    <rect key="frame" x="28" y="42" width="374" height="54"/>
+                                                    <rect key="frame" x="28" y="42" width="335" height="54"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="54" id="m7k-jq-4Nn"/>
                                                     </constraints>
@@ -283,7 +283,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaF-GY-zGT">
-                                                    <rect key="frame" x="28" y="13" width="374" height="21"/>
+                                                    <rect key="frame" x="28" y="13" width="335" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="uNa-EL-vxg"/>
                                                     </constraints>
@@ -436,30 +436,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-fP-GrF">
-                                                    <rect key="frame" x="20" y="31" width="374" height="150"/>
+                                                    <rect key="frame" x="20" y="31" width="335" height="150"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8p-Lt-40X" customClass="RoundButtonNoColor" customModule="FlowClu" customModuleProvider="target">
-                                                            <rect key="frame" x="244" y="111.5" width="110" height="35"/>
-                                                            <color key="backgroundColor" red="0.98431372549019602" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="110" id="Egz-nO-rk7"/>
-                                                                <constraint firstAttribute="height" constant="35" id="Zg9-L4-X8U"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
-                                                            <state key="normal" title="Read more">
-                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </state>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="7"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                            <connections>
-                                                                <action selector="ReadPostMore:" destination="sSF-0N-lW1" eventType="touchUpInside" id="IKu-YW-fkO"/>
-                                                            </connections>
-                                                        </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My first Period Story Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in urna ipsum. Vivamus tempus diam dolor," lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTV-7Y-Q3Z">
-                                                            <rect key="frame" x="20" y="31.5" width="334" height="70"/>
+                                                            <rect key="frame" x="20" y="31.5" width="295" height="70"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="70" id="JXn-tw-0VL"/>
                                                             </constraints>
@@ -468,9 +448,15 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My First Period" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyz-Vw-FNR">
-                                                            <rect key="frame" x="10" y="5" width="354" height="21.5"/>
+                                                            <rect key="frame" x="10" y="5" width="315" height="21.5"/>
                                                             <fontDescription key="fontDescription" name="Oxygen-Bold" family="Oxygen" pointSize="17"/>
                                                             <color key="textColor" red="0.98431372549019602" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read More.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nax-RV-w8C">
+                                                            <rect key="frame" x="233" y="121" width="92" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -478,13 +464,13 @@
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="RTV-7Y-Q3Z" secondAttribute="trailing" constant="20" id="71b-IV-BZJ"/>
                                                         <constraint firstItem="hyz-Vw-FNR" firstAttribute="leading" secondItem="dgJ-fP-GrF" secondAttribute="leading" constant="10" id="9OC-ra-61T"/>
-                                                        <constraint firstAttribute="trailing" secondItem="a8p-Lt-40X" secondAttribute="trailing" constant="20" id="AO0-63-axw"/>
-                                                        <constraint firstItem="a8p-Lt-40X" firstAttribute="top" secondItem="RTV-7Y-Q3Z" secondAttribute="bottom" constant="10" id="BEN-DL-vch"/>
                                                         <constraint firstAttribute="height" constant="150" id="BmZ-pu-5tl"/>
                                                         <constraint firstItem="RTV-7Y-Q3Z" firstAttribute="top" secondItem="hyz-Vw-FNR" secondAttribute="bottom" constant="5" id="Grp-0X-NST"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nax-RV-w8C" secondAttribute="trailing" constant="10" id="JK8-50-V60"/>
                                                         <constraint firstItem="RTV-7Y-Q3Z" firstAttribute="leading" secondItem="dgJ-fP-GrF" secondAttribute="leading" constant="20" id="QP8-Gt-ZrZ"/>
                                                         <constraint firstAttribute="trailing" secondItem="hyz-Vw-FNR" secondAttribute="trailing" constant="10" id="VjM-ho-kfM"/>
                                                         <constraint firstItem="hyz-Vw-FNR" firstAttribute="top" secondItem="dgJ-fP-GrF" secondAttribute="top" constant="5" id="i1q-nd-BhZ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="nax-RV-w8C" secondAttribute="bottom" constant="8" id="xpd-9B-sko"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>

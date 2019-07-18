@@ -40,13 +40,13 @@
 		F4354DCE22AF25130054BFF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4354DCD22AF25120054BFF2 /* GoogleService-Info.plist */; };
 		F4354DDB22AF75490054BFF2 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */; };
 		F446397922B4C196004CA54C /* GetEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446397822B4C196004CA54C /* GetEmailVC.swift */; };
+		F45A7D7022D93EC400F6D760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45A7D6F22D93EC400F6D760 /* Assets.xcassets */; };
 		F46F627822D8F5BC000919AD /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46F627722D8F5BC000919AD /* Calendar.storyboard */; };
 		F46F627C22D8F62A000919AD /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F627B22D8F62A000919AD /* CalendarVC.swift */; };
 		F46F627E22D8F818000919AD /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F627D22D8F818000919AD /* DateCell.swift */; };
 		F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54722AB4E9700794980 /* AppDelegate.swift */; };
 		F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E54922AB4E9700794980 /* MainStoryboardVC.swift */; };
 		F4E1E54D22AB4E9700794980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E54B22AB4E9700794980 /* Main.storyboard */; };
-		F4E1E54F22AB4E9800794980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E54E22AB4E9800794980 /* Assets.xcassets */; };
 		F4E1E55222AB4E9800794980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E1E55022AB4E9800794980 /* LaunchScreen.storyboard */; };
 		F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */; };
 		F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E56222AB6C6300794980 /* SignInVC.swift */; };
@@ -89,14 +89,15 @@
 		F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		F446397822B4C196004CA54C /* GetEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEmailVC.swift; sourceTree = "<group>"; };
 		F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.release.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.release.xcconfig"; sourceTree = "<group>"; };
+		F45A7D6F22D93EC400F6D760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46F627722D8F5BC000919AD /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		F46F627B22D8F62A000919AD /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		F46F627D22D8F818000919AD /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		F46F627F22D91507000919AD /* FlowClu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlowClu.entitlements; sourceTree = "<group>"; };
 		F4E1E54422AB4E9700794980 /* FlowClu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowClu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E1E54722AB4E9700794980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E1E54922AB4E9700794980 /* MainStoryboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryboardVC.swift; sourceTree = "<group>"; };
 		F4E1E54C22AB4E9700794980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F4E1E54E22AB4E9800794980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E1E55122AB4E9800794980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4E1E55322AB4E9800794980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4E1E56022AB6C1900794980 /* EmailSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpVC.swift; sourceTree = "<group>"; };
@@ -243,6 +244,7 @@
 		F4E1E54622AB4E9700794980 /* FlowClu */ = {
 			isa = PBXGroup;
 			children = (
+				F46F627F22D91507000919AD /* FlowClu.entitlements */,
 				F4102E6F22CDEAEB00A526CF /* Open_Sans */,
 				F4102E6022CD4D4000A526CF /* Oxygen */,
 				F429255B22B8885E006EEA3B /* Utils */,
@@ -251,8 +253,8 @@
 				F4E1E55C22AB6BB000794980 /* Views */,
 				F4E1E55D22AB6BB600794980 /* Controllers */,
 				F4E1E54722AB4E9700794980 /* AppDelegate.swift */,
-				F4E1E54E22AB4E9800794980 /* Assets.xcassets */,
 				F4E1E55322AB4E9800794980 /* Info.plist */,
+				F45A7D6F22D93EC400F6D760 /* Assets.xcassets */,
 				F4354DCD22AF25120054BFF2 /* GoogleService-Info.plist */,
 			);
 			path = FlowClu;
@@ -324,6 +326,14 @@
 				TargetAttributes = {
 					F4E1E54322AB4E9700794980 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -352,6 +362,7 @@
 			files = (
 				F4102E8122CDEAEB00A526CF /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				F4102E8222CDEAEB00A526CF /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				F45A7D7022D93EC400F6D760 /* Assets.xcassets in Resources */,
 				F4102E6822CD4D4000A526CF /* Oxygen-Bold.ttf in Resources */,
 				F4102E6622CD4D4000A526CF /* Oxygen-Light.ttf in Resources */,
 				F4102E7F22CDEAEB00A526CF /* OpenSans-LightItalic.ttf in Resources */,
@@ -359,7 +370,6 @@
 				F4102E8722CDF05900A526CF /* Settings.storyboard in Resources */,
 				F4354DCE22AF25130054BFF2 /* GoogleService-Info.plist in Resources */,
 				F4E1E55222AB4E9800794980 /* LaunchScreen.storyboard in Resources */,
-				F4E1E54F22AB4E9800794980 /* Assets.xcassets in Resources */,
 				F4102E6522CD4D4000A526CF /* Oxygen-Regular.ttf in Resources */,
 				F4102E8422CDEAEB00A526CF /* OpenSans-Regular.ttf in Resources */,
 				F4102E8022CDEAEB00A526CF /* OpenSans-Bold.ttf in Resources */,
@@ -591,15 +601,16 @@
 			baseConfigurationReference = D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlowClu/FlowClu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8M6TLM9Q4R;
+				DEVELOPMENT_TEAM = K325GB34HX;
 				INFOPLIST_FILE = FlowClu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FlowClu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FloClu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -612,15 +623,16 @@
 			baseConfigurationReference = F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlowClu/FlowClu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8M6TLM9Q4R;
+				DEVELOPMENT_TEAM = K325GB34HX;
 				INFOPLIST_FILE = FlowClu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FlowClu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FloClu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
