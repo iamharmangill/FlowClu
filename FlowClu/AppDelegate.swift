@@ -7,16 +7,26 @@
 //
 
 import UIKit
-import UserNotifications
+import Firebase
+import GoogleSignIn
 
+
+
+let primaryColor = UIColor(red: 98/255, green: 50/255, blue: 50/255, alpha: 1)
+let secondaryColor = UIColor(red: 5/255, green: 72/255, blue: 62/255, alpha: 1)
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
-    var window: UIWindow?
+var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        registerForPushNotifications()
+        // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
         return true
     }
 
@@ -41,42 +51,77 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
+
     
-    func registerForPushNotifications() {
-        UNUserNotificationCenter.current()
-            .requestAuthorization(options: [.alert, .sound, .badge]) {
-                [weak self] granted, error in
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                                                 annotation:options [UIApplication.OpenURLOptionsKey.annotation])
+        
+        
+    }
+    
+    
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+        // ...
+        if let error = error {
+            // ...
+             print("=============================Start===========================")
+            print("login success", error)
+            print(error.localizedDescription)
+            print("=============================end===========================")
+
+        }
+        
+
+            else{
+                guard let authentication = user.authentication else { return }
+                let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                               accessToken: authentication.accessToken)
                 
-                print("Permission granted: \(granted)")
-                guard granted else { return }
-                self?.getNotificationSettings()
-        }
-    }
-
-    func getNotificationSettings() {
-        UNUserNotificationCenter.current().getNotificationSettings { settings in
-            print("Notification settings: \(settings)")
-            guard settings.authorizationStatus == .authorized else { return }
-            DispatchQueue.main.async {
-                UIApplication.shared.registerForRemoteNotifications()
+                Auth.auth().signIn(with: credential) { (authResult, error) in
+                    if error == nil {
+                        print(authResult?.user.email as Any )
+                        print(authResult?.user.displayName as Any)
+                        // ...
+                        
+                    }
+                    else
+                    {
+                        print(error?.localizedDescription as Any)
+                    }
+                    // User is signed i
+                    // ...
+                }
+                
+                
             }
+            
+            // User is signed in
+            // ...
         }
+        // ...
     }
     
-    func application(
-        _ application: UIApplication,
-        didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
-        ) {
-        let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
-        let token = tokenParts.joined()
-        print("Device Token: \(token)")
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
     }
     
-    func application(
-        _ application: UIApplication,
-        didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        print("Failed to register: \(error)")
-    }
+   
 
-}
+
+
 
