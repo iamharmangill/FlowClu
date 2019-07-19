@@ -23,7 +23,7 @@ class PostsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func getdata() {
-        let url = URL(string: "http://sagarkalyan81.000webhostapp.com/posts.php")
+        let url = URL(string: "https://floclu.ca/posts.php")
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             do {
                 if error == nil {
@@ -67,8 +67,25 @@ class PostsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return 200
     }
     
+    
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        //        performSegue(withIdentifier: "toDetailsVC", sender: self)
+//        let detail: PostDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "detail") as! PostDetailsVC
+//        detail.postTitle = arrdata[indexPath.row].title
+//        detail.postDetail = arrdata[indexPath.row].detail
+//        self.navigationController?.pushViewController(detail, animated: true)
+//    }
+//
+    
+    
+    
+    @IBAction func ReadPostMore(_ sender: Any) {
+    }
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "toDetailsVC", sender: self)
+        //        performSegue(withIdentifier: "toDetailsVC", sender: self)
         let detail: PostDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "detail") as! PostDetailsVC
         detail.postTitle = arrdata[indexPath.row].title
         detail.postDetail = arrdata[indexPath.row].detail
