@@ -21,13 +21,13 @@ import MapKit
 //    }
 //}
 
-struct jsonstruct:Decodable {
-    let id:String?
-    let latitude:String?
-    let longitude:String?
-    let time_stamp:String?
-
-}
+//struct jsonstruct:Decodable {
+//    let id:String?
+//    let latitude:String?
+//    let longitude:String?
+//    let time_stamp:String?
+//
+//}
 
 
 class HelpListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
@@ -135,13 +135,13 @@ class HelpListViewController: UIViewController, UITableViewDataSource, UITableVi
         func getdata(){
             
             
-            let url = URL(string: "https://sagarkalyan81.000webhostapp.com/services.php")
+            let url = URL(string: "https://floclu.ca/services.php")
             URLSession.shared.dataTask(with: url!) { (data, response, error) in
                 do{if error == nil{
                     self.arrdata = try JSONDecoder().decode([jsonstruct].self, from: data!)
                     
-                    for mainarr in self.arrdata{
-                        print(mainarr.id as Any,":",mainarr.latitude as Any,":",mainarr.longitude as Any)
+                    for element in self.arrdata{
+                        print(element.id as Any,":",element.latitude as Any,":",element.longitude as Any, element.username as Any, element.userid as Any)
                         DispatchQueue.main.async {
                             self.tableViewsShow.reloadData()
                         }
@@ -170,8 +170,8 @@ class HelpListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:TableCellTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableCellTableViewCell
-        cell.latLabel.text = "latitude : \(String(describing: arrdata[indexPath.row].latitude))"
-        cell.longLabel.text = "longitude : \(String(describing: arrdata[indexPath.row].longitude))"
+        cell.longLabel.text = "Name : \(String( arrdata[indexPath.row].username!))"
+        cell.latLabel.text = "lat&long: \((String(arrdata[indexPath.row].longitude!),"/n", String(arrdata[indexPath.row].longitude!) ))"
         return cell
     }
     
@@ -207,7 +207,7 @@ class HelpListViewController: UIViewController, UITableViewDataSource, UITableVi
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         print("locations = \(locValue.latitude) \(locValue.longitude)")
         let userLocation = locations.last
-        let viewRegion = MKCoordinateRegion(center: (userLocation?.coordinate)!, latitudinalMeters: 600, longitudinalMeters: 600)
+        let viewRegion = MKCoordinateRegion.init(center: (userLocation?.coordinate)!, latitudinalMeters: 600, longitudinalMeters: 600)
         self.mapView.setRegion(viewRegion, animated: true)
     }
     

@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
 
+
+
+let primaryColor = UIColor(red: 98/255, green: 50/255, blue: 50/255, alpha: 1)
+let secondaryColor = UIColor(red: 5/255, green: 72/255, blue: 62/255, alpha: 1)
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
-    var window: UIWindow?
+var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
         return true
     }
 
@@ -42,5 +53,75 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+    
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                                                 annotation:options [UIApplication.OpenURLOptionsKey.annotation])
+        
+        
+    }
+    
+    
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+        // ...
+        if let error = error {
+            // ...
+             print("=============================Start===========================")
+            print("login success", error)
+            print(error.localizedDescription)
+            print("=============================end===========================")
+
+        }
+        
+
+            else{
+                guard let authentication = user.authentication else { return }
+                let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                               accessToken: authentication.accessToken)
+                
+                Auth.auth().signIn(with: credential) { (authResult, error) in
+                    if error == nil {
+                        print(authResult?.user.email as Any )
+                        print(authResult?.user.displayName as Any)
+                        // ...
+                        
+                    }
+                    else
+                    {
+                        print(error?.localizedDescription as Any)
+                    }
+                    // User is signed i
+                    // ...
+                }
+                
+                
+            }
+            
+            // User is signed in
+            // ...
+        }
+        // ...
+    }
+    
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
+    }
+    
+   
+
+
+
 
