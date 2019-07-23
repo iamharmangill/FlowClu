@@ -47,7 +47,7 @@ class DesignableUITextField: UITextField {
         }
     }
     
-    @IBInspectable var borderColor: UIColor? {
+    @IBInspectable override var borderColor: UIColor? {
         didSet {
             layer.borderColor = borderColor?.cgColor
         }

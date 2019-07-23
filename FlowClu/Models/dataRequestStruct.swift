@@ -17,6 +17,7 @@ struct jsonstruct:Decodable {
     let time_stamp:String?
     let userid = UserDefaults.standard.string(forKey: "myID")
     let username = UserDefaults.standard.string(forKey: "nameuser")
+    let distance:String?
     
     
 }
