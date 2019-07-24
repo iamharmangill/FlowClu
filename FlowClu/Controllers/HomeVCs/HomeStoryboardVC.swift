@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeStoryboardVC: UIViewController {
 
@@ -18,10 +19,15 @@ class HomeStoryboardVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let userID = (Auth.auth().currentUser?.uid)!
+        print(userID)
+        let pushManager = PushNotificationManager(userID: userID)
+        pushManager.registerForPushNotifications()
 
         // Do any additional setup after loading the view.
     }
+    
+   
     
     
     @IBAction func addPeriodButtonClicked(_ sender: Any) {
