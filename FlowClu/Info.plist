@@ -25,7 +25,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.5925206970-tmah2ct4ktobrikghh7lp365v1tji78i</string>
+				<string>com.googleusercontent.apps.5925206970-4giujmmeotsda1h8r3o9g83a42kg741d</string>
 			</array>
 		</dict>
 		<dict>
@@ -33,7 +33,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.harmangill.FlowClu</string>
+				<string>com.harmangill.FloClu</string>
 			</array>
 		</dict>
 		<dict>
