@@ -141,7 +141,7 @@ class HelpListViewController: UIViewController, UITableViewDataSource, UITableVi
                     self.arrdata = try JSONDecoder().decode([jsonstruct].self, from: data!)
                     
                     for element in self.arrdata{
-                        print(element.id as Any,":",element.latitude as Any,":",element.longitude as Any, element.username as Any, element.userid as Any, element.distance as Any)
+                        print(element.id as Any,":",element.latitude as Any,":",element.longitude as Any, element.username as Any, element.userid as Any)
                         DispatchQueue.main.async {
                             self.tableViewsShow.reloadData()
                         }
@@ -160,8 +160,7 @@ class HelpListViewController: UIViewController, UITableViewDataSource, UITableVi
             
         }
     
-    let myId =  UserDefaults.standard.string(forKey: "myID")
-
+  
     
     
     
@@ -170,14 +169,10 @@ class HelpListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         let cell:TableCellTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableCellTableViewCell
         cell.longLabel.text = "Name : \(String( arrdata[indexPath.row].username!))"
-        cell.latLabel.text = "Distance: \((String(arrdata[indexPath.row].distance!),"km"))"
-
+        cell.latLabel.text = "lat&long: \((String(arrdata[indexPath.row].longitude!),"/n", String(arrdata[indexPath.row].longitude!) ))"
         return cell
-    
-
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

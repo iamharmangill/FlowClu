@@ -13,12 +13,6 @@
 		40F769BB22E044A200CE3EE0 /* HelperExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F769BA22E044A200CE3EE0 /* HelperExtension.swift */; };
 		40F769BE22E0F03A00CE3EE0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F769BD22E0F03A00CE3EE0 /* Settings.swift */; };
 		502FC9771AFC1D01DB50C4BB /* Pods_FlowClu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */; };
-		7536D08122E65953000900EC /* calendarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08022E65953000900EC /* calendarEntry.swift */; };
-		7536D08322E6775D000900EC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08222E6775D000900EC /* Date+Extension.swift */; };
-		7536D08522E677B1000900EC /* UIAlertController+Extemsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08422E677B1000900EC /* UIAlertController+Extemsions.swift */; };
-		7536D08722E67A48000900EC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08622E67A48000900EC /* UIView+Extension.swift */; };
-		7536D08922E688AA000900EC /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08822E688AA000900EC /* DatePickerViewController.swift */; };
-		7536D08B22E6894C000900EC /* PickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08A22E6894C000900EC /* PickerViewViewController.swift */; };
 		7579A2C922D91B930010CAD6 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7579A2C822D91B930010CAD6 /* DateHeader.swift */; };
 		75F8B06A22CFC6FF0034D78A /* HelpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */; };
 		75F8B06C22CFD06B0034D78A /* TableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */; };
@@ -78,12 +72,6 @@
 		40F769BA22E044A200CE3EE0 /* HelperExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtension.swift; sourceTree = "<group>"; };
 		40F769BD22E0F03A00CE3EE0 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowClu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7536D08022E65953000900EC /* calendarEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarEntry.swift; sourceTree = "<group>"; };
-		7536D08222E6775D000900EC /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		7536D08422E677B1000900EC /* UIAlertController+Extemsions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extemsions.swift"; sourceTree = "<group>"; };
-		7536D08622E67A48000900EC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		7536D08822E688AA000900EC /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		7536D08A22E6894C000900EC /* PickerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewViewController.swift; sourceTree = "<group>"; };
 		7579A2C822D91B930010CAD6 /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
 		75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpListViewController.swift; sourceTree = "<group>"; };
 		75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -238,11 +226,6 @@
 				B7FDA0FD22E1640500B99A62 /* DesignableUITextField.swift */,
 				B7FDA0F722E141FD00B99A62 /* color-code.swift */,
 				F429256022B88AE7006EEA3B /* Extensions.swift */,
-				7536D08222E6775D000900EC /* Date+Extension.swift */,
-				7536D08422E677B1000900EC /* UIAlertController+Extemsions.swift */,
-				7536D08622E67A48000900EC /* UIView+Extension.swift */,
-				7536D08822E688AA000900EC /* DatePickerViewController.swift */,
-				7536D08A22E6894C000900EC /* PickerViewViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -273,7 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				F46F627B22D8F62A000919AD /* CalendarVC.swift */,
-				7536D08022E65953000900EC /* calendarEntry.swift */,
+				7579A2C822D91B930010CAD6 /* DateHeader.swift */,
 			);
 			path = CalendarVCs;
 			sourceTree = "<group>";
@@ -325,9 +308,7 @@
 				F400F6C822E7919100CF55B1 /* PNTest.swift */,
 				F4102E9022CE060400A526CF /* Post.swift */,
 				F46F627D22D8F818000919AD /* DateCell.swift */,
-				7579A2C822D91B930010CAD6 /* DateHeader.swift */,
 				F400F6CA22E79F3000CF55B1 /* Codes.swift */,
-
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -513,13 +494,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7536D08722E67A48000900EC /* UIView+Extension.swift in Sources */,
 				F4102E6E22CD580C00A526CF /* HEX.swift in Sources */,
 				F4102E6C22CD542600A526CF /* RoundButton.swift in Sources */,
 				F4102E9322CE09A800A526CF /* PostsVC.swift in Sources */,
 				F4102E9522CEB75F00A526CF /* PostDetailsVC.swift in Sources */,
 				F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */,
-				7536D08B22E6894C000900EC /* PickerViewViewController.swift in Sources */,
 				F400F6C922E7919100CF55B1 /* PNTest.swift in Sources */,
 				F4102E9122CE060400A526CF /* Post.swift in Sources */,
 				75F8B06E22CFD23A0034D78A /* MapLinkDirectionViewController.swift in Sources */,
@@ -528,20 +507,16 @@
 				F400F6CB22E79F3000CF55B1 /* Codes.swift in Sources */,
 				40F769BE22E0F03A00CE3EE0 /* Settings.swift in Sources */,
 				B7FDA0F822E141FE00B99A62 /* color-code.swift in Sources */,
-				7536D08922E688AA000900EC /* DatePickerViewController.swift in Sources */,
 				F4E7B91D22B21C2400C64BFE /* HomeStoryboardVC.swift in Sources */,
 				F459719E22E78103004F6900 /* PushNotificationManager.swift in Sources */,
 				F46F627C22D8F62A000919AD /* CalendarVC.swift in Sources */,
-				7536D08322E6775D000900EC /* Date+Extension.swift in Sources */,
 				40AD5D3422E1E2450083F864 /* dataRequestStruct.swift in Sources */,
 				F429256122B88AE7006EEA3B /* Extensions.swift in Sources */,
 				75F8B06C22CFD06B0034D78A /* TableCellTableViewCell.swift in Sources */,
 				F45971A022E7843F004F6900 /* PushNotificationSender.swift in Sources */,
 				F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */,
 				75F8B06A22CFC6FF0034D78A /* HelpListViewController.swift in Sources */,
-				7536D08122E65953000900EC /* calendarEntry.swift in Sources */,
 				F4102E5F22CD4A5D00A526CF /* AlertVC.swift in Sources */,
-				7536D08522E677B1000900EC /* UIAlertController+Extemsions.swift in Sources */,
 				B7FDA0FE22E1640500B99A62 /* DesignableUITextField.swift in Sources */,
 				F46F627E22D8F818000919AD /* DateCell.swift in Sources */,
 				F446397922B4C196004CA54C /* GetEmailVC.swift in Sources */,
@@ -701,7 +676,7 @@
 				CODE_SIGN_ENTITLEMENTS = FlowClu/FlowClu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K325GB34HX;
 				INFOPLIST_FILE = FlowClu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -724,7 +699,7 @@
 				CODE_SIGN_ENTITLEMENTS = FlowClu/FlowClu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K325GB34HX;
 				INFOPLIST_FILE = FlowClu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
