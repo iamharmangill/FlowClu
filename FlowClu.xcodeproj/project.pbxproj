@@ -14,12 +14,13 @@
 		40F769BE22E0F03A00CE3EE0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F769BD22E0F03A00CE3EE0 /* Settings.swift */; };
 		502FC9771AFC1D01DB50C4BB /* Pods_FlowClu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */; };
 		7579A2C922D91B930010CAD6 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7579A2C822D91B930010CAD6 /* DateHeader.swift */; };
-		7579A2CF22DD5AA70010CAD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7579A2CE22DD5AA60010CAD6 /* GoogleService-Info.plist */; };
 		75F8B06A22CFC6FF0034D78A /* HelpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */; };
 		75F8B06C22CFD06B0034D78A /* TableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */; };
 		75F8B06E22CFD23A0034D78A /* MapLinkDirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06D22CFD23A0034D78A /* MapLinkDirectionViewController.swift */; };
 		B7FDA0F822E141FE00B99A62 /* color-code.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDA0F722E141FD00B99A62 /* color-code.swift */; };
 		B7FDA0FE22E1640500B99A62 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDA0FD22E1640500B99A62 /* DesignableUITextField.swift */; };
+		F400F6C922E7919100CF55B1 /* PNTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F400F6C822E7919100CF55B1 /* PNTest.swift */; };
+		F400F6CB22E79F3000CF55B1 /* Codes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F400F6CA22E79F3000CF55B1 /* Codes.swift */; };
 		F4102E5F22CD4A5D00A526CF /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E5E22CD4A5D00A526CF /* AlertVC.swift */; };
 		F4102E6522CD4D4000A526CF /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E6122CD4D4000A526CF /* Oxygen-Regular.ttf */; };
 		F4102E6622CD4D4000A526CF /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E6222CD4D4000A526CF /* Oxygen-Light.ttf */; };
@@ -48,6 +49,9 @@
 		F429256122B88AE7006EEA3B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429256022B88AE7006EEA3B /* Extensions.swift */; };
 		F4354DDB22AF75490054BFF2 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */; };
 		F446397922B4C196004CA54C /* GetEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446397822B4C196004CA54C /* GetEmailVC.swift */; };
+		F459719B22E498BB004F6900 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F459719A22E498BB004F6900 /* GoogleService-Info.plist */; };
+		F459719E22E78103004F6900 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459719D22E78103004F6900 /* PushNotificationManager.swift */; };
+		F45971A022E7843F004F6900 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459719F22E7843F004F6900 /* PushNotificationSender.swift */; };
 		F46F627822D8F5BC000919AD /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46F627722D8F5BC000919AD /* Calendar.storyboard */; };
 		F46F627C22D8F62A000919AD /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F627B22D8F62A000919AD /* CalendarVC.swift */; };
 		F46F627E22D8F818000919AD /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F627D22D8F818000919AD /* DateCell.swift */; };
@@ -69,13 +73,14 @@
 		40F769BD22E0F03A00CE3EE0 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowClu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7579A2C822D91B930010CAD6 /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
-		7579A2CE22DD5AA60010CAD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpListViewController.swift; sourceTree = "<group>"; };
 		75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellTableViewCell.swift; sourceTree = "<group>"; };
 		75F8B06D22CFD23A0034D78A /* MapLinkDirectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLinkDirectionViewController.swift; sourceTree = "<group>"; };
 		B7FDA0F722E141FD00B99A62 /* color-code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "color-code.swift"; sourceTree = "<group>"; };
 		B7FDA0FD22E1640500B99A62 /* DesignableUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.debug.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.debug.xcconfig"; sourceTree = "<group>"; };
+		F400F6C822E7919100CF55B1 /* PNTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNTest.swift; sourceTree = "<group>"; };
+		F400F6CA22E79F3000CF55B1 /* Codes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codes.swift; sourceTree = "<group>"; };
 		F4102E5E22CD4A5D00A526CF /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		F4102E6122CD4D4000A526CF /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
 		F4102E6222CD4D4000A526CF /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
@@ -105,6 +110,10 @@
 		F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		F446397822B4C196004CA54C /* GetEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEmailVC.swift; sourceTree = "<group>"; };
 		F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.release.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.release.xcconfig"; sourceTree = "<group>"; };
+		F459719A22E498BB004F6900 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F459719C22E49F62004F6900 /* FlowClu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlowClu.entitlements; sourceTree = "<group>"; };
+		F459719D22E78103004F6900 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		F459719F22E7843F004F6900 /* PushNotificationSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
 		F46F627722D8F5BC000919AD /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		F46F627B22D8F62A000919AD /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		F46F627D22D8F818000919AD /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
@@ -273,6 +282,7 @@
 		F4E1E54622AB4E9700794980 /* FlowClu */ = {
 			isa = PBXGroup;
 			children = (
+				F459719C22E49F62004F6900 /* FlowClu.entitlements */,
 				F4102E6F22CDEAEB00A526CF /* Open_Sans */,
 				F4102E6022CD4D4000A526CF /* Oxygen */,
 				F429255B22B8885E006EEA3B /* Utils */,
@@ -282,8 +292,8 @@
 				F4E1E55D22AB6BB600794980 /* Controllers */,
 				F4E1E54722AB4E9700794980 /* AppDelegate.swift */,
 				F4E1E54E22AB4E9800794980 /* Assets.xcassets */,
+				F459719A22E498BB004F6900 /* GoogleService-Info.plist */,
 				F4E1E55322AB4E9800794980 /* Info.plist */,
-				7579A2CE22DD5AA60010CAD6 /* GoogleService-Info.plist */,
 			);
 			path = FlowClu;
 			sourceTree = "<group>";
@@ -293,8 +303,12 @@
 			children = (
 				40AD5D3322E1E2450083F864 /* dataRequestStruct.swift */,
 				F4102E8E22CE05A700A526CF /* DataSet.swift */,
+				F459719D22E78103004F6900 /* PushNotificationManager.swift */,
+				F459719F22E7843F004F6900 /* PushNotificationSender.swift */,
+				F400F6C822E7919100CF55B1 /* PNTest.swift */,
 				F4102E9022CE060400A526CF /* Post.swift */,
 				F46F627D22D8F818000919AD /* DateCell.swift */,
+				F400F6CA22E79F3000CF55B1 /* Codes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -358,6 +372,11 @@
 					F4E1E54322AB4E9700794980 = {
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -403,7 +422,7 @@
 				F4102E6722CD4D4000A526CF /* OFL.txt in Resources */,
 				F4102E7D22CDEAEB00A526CF /* OpenSans-Italic.ttf in Resources */,
 				F4102E7C22CDEAEB00A526CF /* OpenSans-Light.ttf in Resources */,
-				7579A2CF22DD5AA70010CAD6 /* GoogleService-Info.plist in Resources */,
+				F459719B22E498BB004F6900 /* GoogleService-Info.plist in Resources */,
 				F4354DDB22AF75490054BFF2 /* HomeStoryboard.storyboard in Resources */,
 				F4102E7E22CDEAEB00A526CF /* OpenSans-ExtraBold.ttf in Resources */,
 			);
@@ -480,17 +499,21 @@
 				F4102E9322CE09A800A526CF /* PostsVC.swift in Sources */,
 				F4102E9522CEB75F00A526CF /* PostDetailsVC.swift in Sources */,
 				F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */,
+				F400F6C922E7919100CF55B1 /* PNTest.swift in Sources */,
 				F4102E9122CE060400A526CF /* Post.swift in Sources */,
 				75F8B06E22CFD23A0034D78A /* MapLinkDirectionViewController.swift in Sources */,
 				F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */,
 				F4102E8922CDF4B000A526CF /* RoundCornerNoColor.swift in Sources */,
+				F400F6CB22E79F3000CF55B1 /* Codes.swift in Sources */,
 				40F769BE22E0F03A00CE3EE0 /* Settings.swift in Sources */,
 				B7FDA0F822E141FE00B99A62 /* color-code.swift in Sources */,
 				F4E7B91D22B21C2400C64BFE /* HomeStoryboardVC.swift in Sources */,
+				F459719E22E78103004F6900 /* PushNotificationManager.swift in Sources */,
 				F46F627C22D8F62A000919AD /* CalendarVC.swift in Sources */,
 				40AD5D3422E1E2450083F864 /* dataRequestStruct.swift in Sources */,
 				F429256122B88AE7006EEA3B /* Extensions.swift in Sources */,
 				75F8B06C22CFD06B0034D78A /* TableCellTableViewCell.swift in Sources */,
+				F45971A022E7843F004F6900 /* PushNotificationSender.swift in Sources */,
 				F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */,
 				75F8B06A22CFC6FF0034D78A /* HelpListViewController.swift in Sources */,
 				F4102E5F22CD4A5D00A526CF /* AlertVC.swift in Sources */,
@@ -650,6 +673,7 @@
 			baseConfigurationReference = D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlowClu/FlowClu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K325GB34HX;
@@ -672,6 +696,7 @@
 			baseConfigurationReference = F44E8FCA35A176D7C3FDDAAD /* Pods-FlowClu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlowClu/FlowClu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K325GB34HX;
