@@ -15,13 +15,37 @@ class addPost: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var SavePost: UIButton!
     var arrdata = [userdata]()
    
+    
+
+    
+    
+    
+    
+    
     @IBAction func postSaved(_ sender: Any) {
         
-        if headingText.text!.isEmpty || descriptionTex.text!.isEmpty || descriptionTex.textColor == UIColor.lightGray {
-           SavePost.isEnabled = false
-            return
+        
+        if headingText.text!.isEmpty || descriptionTex.text!.isEmpty || descriptionTex.textColor == UIColor.lightGray
+        {
+            SavePost.isEnabled = false
+
+            let alert = UIAlertController(title: "Title or Description is empty", message: "Looks like the title or description field is empty.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+           
+    return
+            
         }
         
+//        SavePost.isEnabled = true
+//        SavePost.layer.cornerRadius = 10
+//        SavePost.clipsToBounds = true
+//        SavePost.backgroundColor = white
+//        SavePost.layer.borderWidth = 3
+//        SavePost.layer.borderColor = color1.cgColor
+//
+//
         
 //        get data
         let myId =  UserDefaults.standard.string(forKey: "myID")
@@ -49,11 +73,14 @@ class addPost: UIViewController, UITextFieldDelegate {
                         
                         var dataString = "secretWord=44fdcv8jf3"
                         
-                        
-                        dataString = dataString + "&title=\(String(self.headingText.text!))"
-                        dataString = dataString + "&detail=\(String(self.descriptionTex.text))"
-                        dataString = dataString + "&userid=\(String(myId!))"
-                        dataString = dataString + "&username=\(String(usenam!))"
+                        DispatchQueue.main.async
+                            {
+                                dataString = dataString + "&title=\(String(self.headingText.text!))"
+                                dataString = dataString + "&detail=\(String(self.descriptionTex.text))"
+                                dataString = dataString + "&userid=\(String(myId!))"
+                                dataString = dataString + "&username=\(String(usenam!))"
+                                
+                        }
                         
                         print(dataString, "=================test=================")
                         
@@ -95,7 +122,11 @@ class addPost: UIViewController, UITextFieldDelegate {
                                                     let alert = UIAlertController(title: "Upload OK?", message: "Looks like the upload and insert into the database worked.", preferredStyle: .alert)
                                                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                                                     self.present(alert, animated: true, completion: nil)
+
+                                                
+                                                    
                                             }
+
                                         }
                                         else
                                         {
@@ -135,57 +166,66 @@ class addPost: UIViewController, UITextFieldDelegate {
             {
                 print("Error Serialize", jsonErr)
             }
-            
+           
             }.resume()
         
         
 //        get data end
         
-       
         
+        
+//        self.navigationController?.popViewController(animated: true)
+
     }
     
-    
+//
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SavePost.layer.cornerRadius = 20
-        SavePost.clipsToBounds = true
-        SavePost.backgroundColor = white
-        SavePost.layer.borderWidth = 3
-        SavePost.layer.borderColor = color1.cgColor
+//        SavePost.isEnabled = false
+        SavePost.layer.cornerRadius = 10
+                SavePost.clipsToBounds = true
+        SavePost.backgroundColor = UIColor.white
+        SavePost.layer.borderColor = color3.cgColor
+                SavePost.layer.borderWidth = 3
+        SavePost.titleLabel?.textColor = UIColor.lightGray
+
+        
+//        SavePost.layer.cornerRadius = 10
+//        SavePost.clipsToBounds = true
+//        SavePost.backgroundColor = white
+//        SavePost.layer.borderWidth = 3
+//        SavePost.layer.borderColor = color1.cgColor
         
         headingText.layer.cornerRadius = 20
-        headingText.layer.borderWidth = 3
-        headingText.layer.borderColor = color1.cgColor
+        headingText.layer.borderWidth = 1
+        headingText.layer.borderColor = color5.cgColor
         
         descriptionTex.layer.cornerRadius = 20
-        descriptionTex.layer.borderWidth = 3
-        descriptionTex.layer.borderColor = color1.cgColor
+        descriptionTex.layer.borderWidth = 1
+        descriptionTex.layer.borderColor = color5.cgColor
+    
         
       
         
         
         
+        
     }
     
+//    text view padding start
+    
+    class UITextViewPadding : UITextView {
+        required init?(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
+            textContainerInset = UIEdgeInsets(top: 8, left: 6, bottom: 8, right: 4)
+        }
+    }
+    
+//    text view padding ends
+    
    
-    
-    
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
-    
     
     //    keyboard hide code
     
@@ -203,25 +243,40 @@ class addPost: UIViewController, UITextFieldDelegate {
     
     //      keyboard hide code ends
     
-
     
 }
+
+
+
 
 extension addPost: UITextViewDelegate {
+//
     func textViewDidBeginEditing(_ textView: UITextView) {
-        if descriptionTex.textColor == UIColor.darkGray {
-            descriptionTex.text = nil
-            descriptionTex.textColor = UIColor.black
-        }
+print("woriknug============================================")
+
+if descriptionTex.textColor == UIColor.black {
+    descriptionTex.text = nil
+    descriptionTex.textColor = UIColor.black
+    
+    
+    
+    
+    print("woriknug==============================flknlkgnkljgkl;gfjmfgkkfgdjk==============")
+    
+}
+}
+
+func textViewDidEndEditing(_ textView: UITextView) {
+    if descriptionTex.text.isEmpty {
+        descriptionTex.text = "Description"
+        descriptionTex.textColor = UIColor.darkGray
     }
     
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if descriptionTex.text.isEmpty {
-            descriptionTex.text = "Description"
-            descriptionTex.textColor = UIColor.darkGray
-        }
-    }
+    
 }
+}
+
+//}
 
 
 //extension UIViewController {

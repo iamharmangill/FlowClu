@@ -51,8 +51,8 @@ class AlertVC: UIViewController, UITextFieldDelegate, CLLocationManagerDelegate 
             currentLocation = locManager.location
             
         }
-        latitude = "\(currentLocation.coordinate.longitude)"
-        longitude = "\(currentLocation.coordinate.latitude)"
+        latitude = "\(currentLocation.coordinate.latitude)"
+        longitude = "\(currentLocation.coordinate.longitude)"
         
         
         print(myId!, "================================hasjddkk===============================")
