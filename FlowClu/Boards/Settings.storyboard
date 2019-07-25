@@ -29,17 +29,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3B0-Ch-MNg">
-                                <rect key="frame" x="150.5" y="138" width="113" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3B0-Ch-MNg">
+                                <rect key="frame" x="30" y="138" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="efT-6V-25f"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXc-S1-KPg" customClass="RoundButton" customModule="FlowClu" customModuleProvider="target">
-                                <rect key="frame" x="20" y="226.5" width="374" height="52"/>
+                                <rect key="frame" x="20" y="218" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.050980392156862744" green="0.72549019607843135" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="vSe-w2-tpG"/>
+                                    <constraint firstAttribute="height" constant="50" id="up0-KW-zbk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Oxygen-Regular" family="Oxygen" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -48,9 +51,9 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3b-Cc-98L" customClass="RoundButton" customModule="FlowClu" customModuleProvider="target">
-                                <rect key="frame" x="20" y="288.5" width="374" height="52"/>
+                                <rect key="frame" x="20" y="288" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="DP2-eS-uQZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="jOP-9N-hYK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Oxygen-Regular" family="Oxygen" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -59,10 +62,10 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzT-d4-jMg" customClass="RoundButton" customModule="FlowClu" customModuleProvider="target">
-                                <rect key="frame" x="20" y="350.5" width="374" height="52"/>
+                                <rect key="frame" x="20" y="358" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.050980392156862744" green="0.72549019607843135" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="L9i-7U-ak9"/>
+                                    <constraint firstAttribute="height" constant="50" id="4YT-nB-qyU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Oxygen-Regular" family="Oxygen" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -71,9 +74,9 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL5-rU-WEq" customClass="RoundButton" customModule="FlowClu" customModuleProvider="target">
-                                <rect key="frame" x="20" y="412.5" width="374" height="52"/>
+                                <rect key="frame" x="20" y="428" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="QP8-a9-xhY"/>
+                                    <constraint firstAttribute="height" constant="50" id="MnX-IF-j09"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Oxygen-Regular" family="Oxygen" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -82,10 +85,10 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc2-nF-C2f" customClass="RoundButtonNoColor" customModule="FlowClu" customModuleProvider="target">
-                                <rect key="frame" x="20" y="663" width="374" height="52"/>
+                                <rect key="frame" x="20" y="712" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.49019607843137253" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="ysR-3n-K2u"/>
+                                    <constraint firstAttribute="height" constant="50" id="XOF-sb-k1i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="Logout">
@@ -96,9 +99,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPV-A0-K5S" customClass="RoundButton" customModule="FlowClu" customModuleProvider="target">
-                                <rect key="frame" x="20" y="475" width="374" height="52"/>
+                                <rect key="frame" x="20" y="498" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="0Io-Yd-nuh"/>
+                                    <constraint firstAttribute="height" constant="50" id="auJ-GF-9aX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Oxygen-Regular" family="Oxygen" pointSize="17"/>
                                 <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -112,30 +115,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3B0-Ch-MNg" firstAttribute="top" secondItem="0Rc-1E-kFS" secondAttribute="top" constant="50" id="4Ok-G2-bf5"/>
-                            <constraint firstItem="EzT-d4-jMg" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="4ec-hV-laE"/>
-                            <constraint firstItem="3B0-Ch-MNg" firstAttribute="centerX" secondItem="Ila-p4-ZLX" secondAttribute="centerX" id="77k-4A-TlZ"/>
-                            <constraint firstItem="r3b-Cc-98L" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="9cP-dS-103"/>
-                            <constraint firstItem="sc2-nF-C2f" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="Ad4-dF-PrR"/>
-                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="sc2-nF-C2f" secondAttribute="trailing" constant="20" id="BQJ-fK-Hcp"/>
-                            <constraint firstItem="mPV-A0-K5S" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="CGb-IL-V3n"/>
-                            <constraint firstItem="NXc-S1-KPg" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="DuO-Mf-Kvd"/>
-                            <constraint firstItem="sc2-nF-C2f" firstAttribute="top" secondItem="mPV-A0-K5S" secondAttribute="bottom" constant="136" id="FES-wa-435"/>
-                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="NXc-S1-KPg" secondAttribute="trailing" constant="20" id="NVG-dO-3AB"/>
-                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="mPV-A0-K5S" secondAttribute="trailing" constant="20" id="SIZ-HT-H3A"/>
-                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="mPV-A0-K5S" secondAttribute="trailing" constant="20" id="WSC-4U-rwX"/>
-                            <constraint firstItem="XL5-rU-WEq" firstAttribute="top" secondItem="EzT-d4-jMg" secondAttribute="bottom" constant="10" id="Z2C-Lb-bFu"/>
-                            <constraint firstItem="EzT-d4-jMg" firstAttribute="top" secondItem="r3b-Cc-98L" secondAttribute="bottom" constant="10" id="ZC9-Fz-FXm"/>
-                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="r3b-Cc-98L" secondAttribute="trailing" constant="20" id="bTF-nG-bZm"/>
-                            <constraint firstItem="mPV-A0-K5S" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="eYU-no-pIc"/>
-                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="sc2-nF-C2f" secondAttribute="trailing" constant="20" id="fpQ-LG-fJh"/>
-                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="XL5-rU-WEq" secondAttribute="trailing" constant="20" id="ftk-Oo-UHo"/>
-                            <constraint firstItem="r3b-Cc-98L" firstAttribute="top" secondItem="NXc-S1-KPg" secondAttribute="bottom" constant="10" id="iMx-ef-4Sx"/>
-                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="EzT-d4-jMg" secondAttribute="trailing" constant="20" id="jM8-Oo-NWm"/>
-                            <constraint firstItem="NXc-S1-KPg" firstAttribute="top" secondItem="3B0-Ch-MNg" secondAttribute="bottom" constant="50" id="ncj-wz-n5h"/>
-                            <constraint firstItem="XL5-rU-WEq" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="uN5-EM-TKR"/>
-                            <constraint firstItem="sc2-nF-C2f" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="vom-RB-aAz"/>
-                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="bottom" secondItem="sc2-nF-C2f" secondAttribute="bottom" constant="147" id="zLx-HW-dw6"/>
+                            <constraint firstItem="mPV-A0-K5S" firstAttribute="top" secondItem="XL5-rU-WEq" secondAttribute="bottom" constant="20" id="CuZ-4D-jXf"/>
+                            <constraint firstItem="NXc-S1-KPg" firstAttribute="top" secondItem="3B0-Ch-MNg" secondAttribute="bottom" constant="40" id="DN9-ED-ijS"/>
+                            <constraint firstItem="sc2-nF-C2f" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="FId-8D-41c"/>
+                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="NXc-S1-KPg" secondAttribute="trailing" constant="20" id="FzB-Rz-1ie"/>
+                            <constraint firstItem="XL5-rU-WEq" firstAttribute="top" secondItem="EzT-d4-jMg" secondAttribute="bottom" constant="20" id="IKe-xP-hec"/>
+                            <constraint firstItem="EzT-d4-jMg" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="KHp-mC-3rn"/>
+                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="XL5-rU-WEq" secondAttribute="trailing" constant="20" id="NL1-ne-dL6"/>
+                            <constraint firstItem="r3b-Cc-98L" firstAttribute="top" secondItem="NXc-S1-KPg" secondAttribute="bottom" constant="20" id="Rje-J8-8rS"/>
+                            <constraint firstItem="r3b-Cc-98L" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="UIA-c9-0jy"/>
+                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="r3b-Cc-98L" secondAttribute="trailing" constant="20" id="VaQ-tT-rxh"/>
+                            <constraint firstItem="3B0-Ch-MNg" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="30" id="YUw-8T-FGH"/>
+                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="mPV-A0-K5S" secondAttribute="trailing" constant="20" id="cFD-yp-BW9"/>
+                            <constraint firstItem="3B0-Ch-MNg" firstAttribute="top" secondItem="0Rc-1E-kFS" secondAttribute="top" constant="50" id="fVJ-sh-Nyp"/>
+                            <constraint firstItem="EzT-d4-jMg" firstAttribute="top" secondItem="r3b-Cc-98L" secondAttribute="bottom" constant="20" id="gkn-y2-mhu"/>
+                            <constraint firstItem="mPV-A0-K5S" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="gpC-lo-Fmx"/>
+                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="bottom" secondItem="sc2-nF-C2f" secondAttribute="bottom" constant="100" id="lI4-Ko-ICV"/>
+                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="3B0-Ch-MNg" secondAttribute="trailing" constant="30" id="osg-r3-sxM"/>
+                            <constraint firstItem="NXc-S1-KPg" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="ps1-Ql-Mje"/>
+                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="sc2-nF-C2f" secondAttribute="trailing" constant="20" id="qVb-Ju-q9f"/>
+                            <constraint firstItem="XL5-rU-WEq" firstAttribute="leading" secondItem="0Rc-1E-kFS" secondAttribute="leading" constant="20" id="xot-h8-Sbo"/>
+                            <constraint firstItem="0Rc-1E-kFS" firstAttribute="trailing" secondItem="EzT-d4-jMg" secondAttribute="trailing" constant="20" id="zEs-BH-igb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Rc-1E-kFS"/>
                     </view>

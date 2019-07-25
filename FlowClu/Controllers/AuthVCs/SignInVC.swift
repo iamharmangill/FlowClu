@@ -154,6 +154,10 @@ class SignInVC: UIViewController , UITextFieldDelegate{
                 return
             }
         }
+//        activityView.stopAnimating()
+//        let homeScreenStoryboard = UIStoryboard(name: "HomeStoryboard", bundle: nil)
+//        let initialNavigationController = homeScreenStoryboard.instantiateInitialViewController() as! UINavigationController
+//        self.present(initialNavigationController, animated: true, completion: nil)
     }
     
     

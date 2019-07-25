@@ -22,47 +22,20 @@ let secondaryColor = UIColor(red: 5/255, green: 72/255, blue: 62/255, alpha: 1)
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
     
     var window: UIWindow?
+    let sender = PushNotificationSender()
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
-//        registerForPushNotifications()
-//        UIApplication.shared.registerForRemoteNotifications()
-        
-        //PN
-        
-//        let pushManager = PushNotificationManager(userID: "currently_logged_in_user_id")
-//        pushManager.registerForPushNotifications()
-//        AAAAAWEre7o:APA91bHHd59qD8D0DwF918cR_pYPLSn7tSOCsX7Pfub_B2dJ9x5qBSBWYSSZovUHHmSTc-K1Z-uY74dX_BpihmY3jSsSdktPeAteL2iAEcHxO9crWUBJXZW8geGitBxoAbKieZ56lWM_
-        
-//        let sender = PushNotificationSender()
-//        sender.sendPushNotification(to: "52b21d80b5315690963e40405fa6a168cd9516506f9d92da844980c3555b0d6e", title: "Notification title", body: "Notification body")
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+
         
 //        // PN Firebase
-//        Messaging.messaging().delegate = self
-//
-//        if #available(iOS 10.0, *) {
-//            // For iOS 10 display notification (sent via APNS)
-//            UNUserNotificationCenter.current().delegate = self
-//
-//            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-//            UNUserNotificationCenter.current().requestAuthorization(
-//                options: authOptions,
-//                completionHandler: {_, _ in })
-//        } else {
-//            let settings: UIUserNotificationSettings =
-//                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-//            application.registerUserNotificationSettings(settings)
-//        }
-//
-//        application.registerForRemoteNotifications()
-//
-//
+        
 //        // PN Firebase End
         
         return true
@@ -76,18 +49,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-        let db = Firestore.firestore()
-        let sender = PushNotificationSender()
-        let usersRef = db.collection("users_table")
-//        usersRef.getDocument { (document, error)  in
-//            if let document = document, document.exists {
-//                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-//            } else {
-//                print("Document does not exist")
-//            }
-//        }
-        sender.sendPushNotification(to: "dqHf8jbGkfw:APA91bGQjPcNXgbMdIue8mEo4gHK76-_dH0Lv7T_AZxRcerodz-cJHw09653UjM_ET7v7mffj4eI_Say4M4FlhQJGLAasxZz_3f40_PHMv9loYDTYKzwNPBm9Y-X17QGL-UMouzSVt4c", title: "Bai chl pwya", body: "shyd shyd shyd")
-        
+        for token in tokenData {
+            sender.sendPushNotification(to: token, title: "PLEASE", body: "BE working")
+        }
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {

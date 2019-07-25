@@ -28,6 +28,8 @@ class AlertVC: UIViewController, UITextFieldDelegate, CLLocationManagerDelegate 
         
         
         
+        
+        
         let myId = UserDefaults.standard.string(forKey: "myID")
         let usenam = UserDefaults.standard.string(forKey: "nameuser")
 

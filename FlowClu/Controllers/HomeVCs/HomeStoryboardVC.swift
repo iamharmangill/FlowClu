@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class HomeStoryboardVC: UIViewController {
 
@@ -21,10 +22,42 @@ class HomeStoryboardVC: UIViewController {
         super.viewDidLoad()
         let userID = (Auth.auth().currentUser?.uid)!
         print(userID)
+        tokenData = []
+        
+        // PN Firebase Start
+        
+        // Saving token to FC DB
         let pushManager = PushNotificationManager(userID: userID)
         pushManager.registerForPushNotifications()
+        
+        // getting tokens
+        let db = Firestore.firestore()
+        db.collection("users").getDocuments { (snapshot, error) in
+            if error != nil {
+                print(error)
+            } else {
+                for document in (snapshot?.documents)! {
+                    if let name = document.data()["fcmToken"] as? String {
+                        print(name)
+                        print("Getting data working...")
+                        
+                        
+                        tokenData.append(name)
+                        
+                    }
+                }
+                print("Out pf funcrions")
+                print(tokenData)
+//                sender.sendPushNotification(to: tokenData[0], title: "Chl Peaa", body: "Kiddan praa")
+                
+            }
+        }
+        print("Out pf funcrions")
+        print(tokenData)
+        
+        
+        //PN Firebase End
 
-        // Do any additional setup after loading the view.
     }
     
    
