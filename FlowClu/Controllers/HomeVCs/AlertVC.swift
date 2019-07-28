@@ -24,14 +24,17 @@ class AlertVC: UIViewController, UITextFieldDelegate, CLLocationManagerDelegate 
     var longitude : String?
     
     
+    
+    
     @IBAction func checkEntries(_ sender: Any) {
-        
-        
-        
-        
         
         let myId = UserDefaults.standard.string(forKey: "myID")
         let usenam = UserDefaults.standard.string(forKey: "nameuser")
+        let sender = PushNotificationSender()
+        
+        for token in tokenData {
+            sender.sendPushNotification(to: token, title: "PLEASE", body: "BE working", category: "alarmCategory")
+        }
 
         
         

@@ -49,9 +49,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-        for token in tokenData {
-            sender.sendPushNotification(to: token, title: "PLEASE", body: "BE working")
-        }
+//        for token in tokenData {
+//            sender.sendPushNotification(to: token, title: "PLEASE", body: "BE working")
+//        }
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {

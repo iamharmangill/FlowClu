@@ -44,13 +44,35 @@ class PushNotificationManager: NSObject, MessagingDelegate, UNUserNotificationCe
             usersRef.setData(["fcmToken": token], merge: true)
         }
     }
+    
     func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
         print(remoteMessage.appData)
     }
+    
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
         updateFirestorePushTokenIfNeeded()
     }
+    
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         print(response)
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+//        let acceptAction = UNNotificationAction(identifier: "accept", title: "Accept", options: [])
+        func setCategories(){
+            let snoozeAction = UNNotificationAction(
+                identifier: "snooze",
+                title: "Snooze 5 Sec",
+                options: [])
+            
+            let alarmCategory = UNNotificationCategory(
+                identifier: "alarm.category",
+                actions: [snoozeAction],
+                intentIdentifiers: [],
+                options: [])
+            
+            UNUserNotificationCenter.current().setNotificationCategories([alarmCategory])
+        }
     }
 }
